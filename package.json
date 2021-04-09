@@ -1,19 +1,23 @@
 {
-  "name": "afc-design",
-  "version": "1.0.0",
-  "description": "Responsive web design using HTML, SCSS and bootstrap",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/manisk/AFC.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/manisk/AFC/issues"
-  },
-  "homepage": "https://github.com/manisk/AFC#readme"
+    "name": "afc-design",
+    "version": "1.0.0",
+    "description": "Responsive web design using HTML, SCSS and bootstrap",
+    "main": "index.js",
+    "scripts": {
+        "scss": "node-sass --watch scss/ -o css/"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/manisk/AFC.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/manisk/AFC/issues"
+    },
+    "homepage": "https://github.com/manisk/AFC#readme",
+    "dependencies": {
+        "bootstrap": "^4.6.0",
+        "node-sass": "^5.0.0"
+    }
 }
