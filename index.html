@@ -6,11 +6,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AFC Page Design</title>
-    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="./css/app.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <h1>hiiiiiiiiiii</h1>
+    <div class="mock-up-desktop" style="width: 100vw; position: fixed; top: 0;left: 0; opacity: 0.1; pointer-events: none; justify-content: center;">
+        <img src="./img/Desktop Design.png" alt="" style="width:1440px; margin:auto">
+    </div>
+
+    <!-- MOBILE PREVIEW -->
+    <div class="mock-up-mobile" style="width: 100vw; position: fixed; top: 0;left: 0; opacity: 0.1; pointer-events: none;">
+        <img src="./img/Mobile Design.png" alt="" style="width:100%">
+    </div>
+
+    <!-- DELETE ABOVE AFTER DONE -->
+
+
+    <div class="container" id="section-navbar">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#">
+                <img src="./img/Logo.svg" alt="AFC Inc.">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav ml-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link text-center" href="#">Track Application</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-center" href="#">Manage My Card</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-center" href="#">FAQs</a>
+                    </li>
+
+                    <li class="nav-item text-center ">
+                        <button class="btn btn-action">Get Started</button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <section class="row align-items-center" id="section-card">
+            <div class="col-md-6 col-sm-12">
+                <h1>Build a Credit Card<br> That is Definitely Yours</h1>
+                <p class="card-desc">With the OneSync Credit Card you can customise your card the way you want</p>
+                <div class="mt-3"><button class="btn btn-action rounded-pill">Get Started</button></div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <img src="./img/atm-card.svg" class="img-fluid" alt="atm-card">
+            </div>
+        </section>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 </body>
 
 </html>

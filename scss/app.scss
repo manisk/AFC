@@ -1,5 +1,106 @@
 @import 'node_modules/bootstrap/scss/bootstrap.scss';
 @import 'config.scss';
+// to remove after done
+.mock-up-mobile {
+    display: none;
+    @media(max-width: 400px) {
+        display: flex;
+    }
+}
+
+.mock-up-desktop {
+    display: flex;
+    @media(max-width: 400px) {
+        display: none;
+    }
+}
+
+// 
 body {
-    background-color: red;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: $font-size-md;
+}
+
+.container {
+    max-width: 1254px;
+}
+
+.btn-action {
+    background-color: $color-red;
+    color: $color-white;
+    font-weight: $font-weight-bold;
+    padding: 6px 23px;
+}
+
+.btn-top:hover {
+    color: $color-white!important; // to override bootstrap default style
+    background-color: rgb(233, 21, 21);
+}
+
+h1 {
+    font-size: $font-size-xxl;
+    @media(max-width: $mobile) {
+        font-size: $font-size-lg;
+        line-height: 45px;
+    }
+}
+
+#section-navbar {
+    .navbar {
+        margin-top: 1rem;
+    }
+    .navbar-brand img {
+        width: 135px;
+        height: auto;
+    }
+    .navbar {
+        padding: 7px 0;
+    }
+    li.nav-item:not(:last-of-type) {
+        margin-right: 28px;
+        font-weight: $font-weight-bold;
+        color: $color-header;
+    }
+    @media (max-width: $mobile) {
+        .navbar {
+            margin-top: 0;
+            padding-left: 5px;
+        }
+        .navbar-brand img {
+            width: 102px;
+        }
+        .navbar-toggler {
+            border: none;
+        }
+        .navbar-toggler-icon {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+    }
+}
+
+#section-card {
+    margin-top: 5rem;
+    .card-desc {
+        font-size: $font-size-md-plus;
+        margin-top: 1rem;
+        max-width: 30rem;
+    }
+    .btn-action {
+        font-size: $font-size-badge;
+        padding: 0.5rem 2rem;
+    }
+    @media(max-width:$mobile) {
+        margin-top: 2rem;
+        text-align: center;
+        .card-desc {
+            font-size: 17px;
+        }
+        img {
+            margin-top: 2rem;
+        }
+    }
 }
