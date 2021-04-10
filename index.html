@@ -9,21 +9,22 @@
     <link rel="stylesheet" href="./css/app.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <div class="mock-up-desktop" style="width: 100vw; position: fixed; top: 0;left: 0; opacity: 0.1; pointer-events: none; justify-content: center;">
+    <div class="mock-up-desktop" style="width: 100vw; position:absolute; top: 0;left: 0; opacity: 0.1; pointer-events: none; justify-content: center;">
         <img src="./img/Desktop Design.png" alt="" style="width:1440px; margin:auto">
     </div>
 
     <!-- MOBILE PREVIEW -->
-    <div class="mock-up-mobile" style="width: 100vw; position: fixed; top: 0;left: 0; opacity: 0.1; pointer-events: none;">
+    <div class="mock-up-mobile" style="width: 100vw; position:absolute; top: 0;left: 0; opacity: 0.1; pointer-events: none;">
         <img src="./img/Mobile Design.png" alt="" style="width:100%">
     </div>
 
     <!-- DELETE ABOVE AFTER DONE -->
 
-
+    <!--navbar-->
     <div class="container" id="section-navbar">
         <nav class="navbar navbar-expand-lg navbar-light">
             <a class="navbar-brand" href="#">
@@ -51,8 +52,11 @@
                 </ul>
             </div>
         </nav>
+    </div>
 
-        <section class="row align-items-center" id="section-card">
+    <!--section-card-->
+    <section class="container" id="section-card">
+        <row class="row align-items-center">
             <div class="col-md-6 col-sm-12">
                 <h1>Build a Credit Card<br> That is Definitely Yours</h1>
                 <p class="card-desc">With the OneSync Credit Card you can customise your card the way you want</p>
@@ -61,8 +65,127 @@
             <div class="col-md-6 col-sm-12">
                 <img src="./img/atm-card.svg" class="img-fluid" alt="atm-card">
             </div>
-        </section>
-    </div>
+    </section>
+
+
+    <!--create-credit-card-->
+    <section class="" id="section-create-credit-card">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-sm-12">
+                    <h2 class="text-white">The Freedom to Create The Credit Card You Want</h2>
+                </div>
+                <div class="col-md-5 col-sm-12 offset-md-2">
+                    <p class="text-white d-none d-md-block">That's why it comes with benefits & rewards chosen by you. Available in multiple designs, your card comes in a style selected by you. You can come back each year, to edit your benefits or update your style.</p>
+                    <p class="text-white d-none d-md-block">Your OneSync Credit Card stays true to you, year after year. It’s the only card you’ll ever need.</p>
+                    <a class="text-white link-primary d-none d-md-block"><span>Get Started <i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
+                    <div class=" d-block d-md-none">
+                        <p class="text-white mt-3">Build your own Credit Card that fits in your day to day lifestyle. First, choose your rewards and then select your card design.</p>
+                        <p class="text-white small mt-4">Check if the card is available in your city</p>
+                        <div class="d-flex d-sm-none">
+                            <select class="form-control rounded-pill">
+                                    <option value="Delhi" selected>Delhi</option>
+                                    <option value="Mumbai">Mumbai</option>
+                             </select>
+                            <button class="text-white btn rounded-pill btn-action">Go</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Mobile view for eligibility-form section -->
+    <section class="d-block d-md-none " id="section-mobile">
+        <h3 class="mobile-heading">Create your own credit card in three easy steps</h3>
+        <div class="d-flex justify-content-center mt-0">
+            <img src="./img/Animation.svg" alt="animation" class="img-fluid">
+        </div>
+    </section>
+
+
+    <!-- eligibility-form -->
+    <section id="section-eligibility-form">
+        <div class="row">
+            <div class="col-md-6 left-side d-none d-md-block">
+                <div class="left-col">
+                    <input type="text" class="form-control custom-input w-100" placeholder="Enter your phone number">
+
+                    <input type="text" class="form-control custom-input w-100" placeholder="Enter your PAN number">
+
+                    <input type="text" class="form-control custom-input w-100" placeholder="Enter your Address">
+                </div>
+
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <div class="d-flex flex-column justify-content-center align-items-center right-col">
+                    <img src="./img/insurance.png" alt="insurance" class="img-fluid d-none d-md-block">
+                    <h2 class="mobile-font">Fill Eligibility Form</h2>
+                    <p class="elegi-desc d-none d-md-block">Tell us about yourself, to find out if you’re eligible to apply.</p>
+                    <p class="d-block d-md-none mob-dese">Please fill an application form to make sure you’re eligible for the card. You can fill this later as well</p>
+                    <a class="text-dark  d-block d-md-none w-100 ml-5">Get Started <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Reward section-->
+    <section id="reward-section" class="d-none d-md-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <div class="reward-left">
+                        <div class="net-img mb-3 d-none d-md-block">
+                            <img src="./img/networking.png" alt="networking image" class="img-fluid">
+                        </div>
+                        <h2>Choose Your Rewards</h2>
+                        <p class="reward-desc d-none d-md-block">Match your card to your lifestyle. We’ve got benefits from across brands & categories for you to choose from. Each benefit has an attached fee. Just add the ones you like to your card.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="reward-right sliders d-flex justify-content-sm-between align-items-center mt-5">
+                        <div class="slide">
+                            <img src="./img/pro1.png" alt="slider image" class="img-fluid">
+                        </div>
+                        <div class="slide">
+                            <img src="./img/projector1.png" alt="slider image" class="img-fluid">
+                        </div>
+                        <div class="slide">
+                            <img src="./img/offer.png" alt="slider image" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Reward section mobile view-->
+    <section class="d-block d-md-none mt-5 " id="section-reward-mobile">
+        <div class="d-flex justify-content-center ">
+            <img src="./img/slider.png" alt="slider" class="img-fluid">
+        </div>
+        <h3 class="">Choose Your Rewards</h3>
+        <p class="">Choose rewards from brands and categories that fit in with your personality. Your card’s annual fee will based on the rewards you select. </p>
+        <a class="text-dark w-100 ml-3">Get Started <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+    </section>
+
+
+    <!--select style section-->
+    <section id="select-style">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <img src="./img/bg1.png" alt="main image" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6"></div>
+            </div>
+        </div>
+    </section>
 
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
