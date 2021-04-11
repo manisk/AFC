@@ -7322,37 +7322,34 @@ h3 {
   max-width: 320px;
   margin: 2rem auto; }
 
-#section-eligibility-form .left-side {
-  background-color: #BFE1FF; }
-
-#section-eligibility-form .left-col {
-  margin-top: 4rem; }
-
-#section-eligibility-form .right-col {
-  margin-top: 8rem; }
-
-#section-eligibility-form img {
-  margin-left: -28rem; }
-
-#section-eligibility-form .mobile-font {
-  margin-top: 1rem;
-  margin-left: -11rem; }
-
-#section-eligibility-form .elegi-desc {
-  font-size: 24px;
-  line-height: 36px;
-  max-width: 367px;
-  margin-top: 1rem;
-  margin-left: -9rem; }
-
-@media (max-width: 450px) {
-  #section-eligibility-form .mobile-font {
-    font-size: 18px; }
+#section-eligibility-form {
+  max-width: 100vw;
+  overflow-x: hidden; }
+  #section-eligibility-form .left-side {
+    background-color: #BFE1FF; }
+  #section-eligibility-form .left-col {
+    margin-top: 4rem; }
   #section-eligibility-form .right-col {
-    margin-top: 1rem; }
-  #section-eligibility-form .mob-dese {
-    text-align: left;
-    max-width: 327px; } }
+    margin-top: 8rem; }
+  #section-eligibility-form img {
+    margin-left: -28rem; }
+  #section-eligibility-form .mobile-font {
+    margin-top: 1rem;
+    margin-left: -11rem; }
+  #section-eligibility-form .elegi-desc {
+    font-size: 24px;
+    line-height: 36px;
+    max-width: 367px;
+    margin-top: 1rem;
+    margin-left: -9rem; }
+  @media (max-width: 450px) {
+    #section-eligibility-form .mobile-font {
+      font-size: 18px; }
+    #section-eligibility-form .right-col {
+      margin-top: 1rem; }
+    #section-eligibility-form .mob-dese {
+      text-align: left;
+      max-width: 327px; } }
 
 #reward-section {
   background-color: #FFE4E7; }
@@ -7370,15 +7367,26 @@ h3 {
     margin-left: 15px; }
     #reward-section .slick-slide.slick-current {
       transform: scale(1); }
+  @media (max-width: 450px) {
+    #reward-section {
+      margin-top: 4rem;
+      padding-bottom: 2.5rem;
+      max-width: 100vw;
+      overflow-x: hidden; }
+      #reward-section #slider {
+        margin-top: 3rem; }
+      #reward-section .reward-left {
+        padding: 0; }
+      #reward-section .slick-slide {
+        margin-left: 0; }
+      #reward-section .slick-slider {
+        transform: scale(1.4); } }
 
 #section-reward-mobile h3 {
   font-size: 18px;
-  padding: 1rem 1rem; }
+  padding: 0.5rem 1rem; }
 
 #section-reward-mobile p {
   text-align: left;
   max-width: 327px;
   margin-left: 1rem; }
-
-#select-style .main-background {
-  background-image: url("../img/bg1.png"); }
