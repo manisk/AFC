@@ -38,6 +38,11 @@ body {
     padding: 6px 23px;
 }
 
+.sml-desc {
+    font-size: $font-size-subtitle;
+    line-height: 36px;
+}
+
 .btn-top:hover {
     color: $color-white!important; // to override bootstrap default style
     background-color: rgb(233, 21, 21);
@@ -77,7 +82,7 @@ h1 {
 h2 {
     font-size: $font-size-xl;
     @media(max-width: $mobile) {
-        font-size: $font-size-subtitle;
+        font-size: $font-size-badge;
     }
 }
 
@@ -100,6 +105,9 @@ h3 {
         margin-right: 28px;
         font-weight: $font-weight-bold;
         color: $color-header;
+        @media(max-width: $mobile) {
+            margin-right: 0;
+        }
     }
     @media (max-width: $mobile) {
         .navbar {
@@ -268,10 +276,16 @@ $card-width: 400px;
     margin-top: 4.5rem;
     .card-details-container {
         max-width: $card-width;
+        width: 100%;
         aspect-ratio: 1.6;
         .card-slider img {
+            width: 100%;
             max-width: $card-width;
             border-radius: 20px;
+            @media(max-width: $mobile) {
+                max-width: 268px;
+                margin-left: 2.3rem;
+            }
         }
         .card-details {
             top: 0;
@@ -288,11 +302,25 @@ $card-width: 400px;
             h5 {
                 font-size: $font-size-badge;
                 font-weight: 600;
+                @media(max-width: $mobile) {
+                    font-size: 12px;
+                }
+            }
+            @media(max-width:$mobile) {
+                padding: 66px;
+                margin-top: -42px;
+                margin-left: -18px;
+                img {
+                    width: 25px;
+                }
+                h4 span {
+                    font-size: 14px;
+                }
             }
         }
     }
     .bottom-card-slider {
-        max-width: $card-width;
+        width: 65%;
         margin-top: 3rem;
         img {
             width: 80px;
@@ -303,5 +331,122 @@ $card-width: 400px;
                 border: 1px solid $color-black;
             }
         }
+        @media(max-width:$mobile) {
+            max-width: 250px;
+            aspect-ratio: 0;
+            margin-top: -28px;
+            img {
+                width: 50px;
+                border-radius: 5px;
+            }
+        }
+    }
+    @media(max-width: $mobile) {
+        .bottom-card-slider {
+            width: 100%;
+        }
+        .master-logo {
+            width: 30px;
+        }
+    }
+    .card-right-sec {
+        margin-top: 1rem;
+        @media(max-width: $mobile) {
+            margin-top: 4rem;
+        }
+    }
+    .sync-card {
+        background-color: #7C7EB5;
+        height: 441px;
+        width: 500px;
+        h1 {
+            font-size: 24px;
+            margin-top: 2rem;
+            max-width: 324px;
+            margin-left: 30px;
+        }
+        p {
+            font-size: 18px;
+            text-align: left;
+            margin-left: 1.3rem;
+            line-height: 27px;
+        }
+        a {
+            margin-left: 1.3rem;
+        }
+    }
+}
+
+#section-faq {
+    margin-top: 9rem;
+    h2 {
+        text-align: center;
+        font-size: $font-size-lg;
+        @media(max-width: $mobile) {
+            font-size: $font-size-subtitle;
+            text-align: left;
+        }
+    }
+    .accordion {
+        width: 68%;
+        margin: 10px auto;
+        @media(max-width: $mobile) {
+            width: 100%!important;
+            margin: 0 auto;
+        }
+    }
+    .card {
+        border: none!important;
+    }
+    h4,
+    i {
+        font-size: $font-size-md-plus;
+        @media(max-width: $mobile) {
+            font-size: $font-size-sm;
+        }
+    }
+    .card-body {
+        border-bottom: 1px solid #ccc;
+        @media(max-width: $mobile) {
+            font-size: 12px;
+        }
+    }
+    .card-header {
+        color: $color-red;
+        cursor: pointer;
+        i {
+            transform: rotate(180deg);
+            transition: transform 0.3s;
+        }
+        .collapsed i {
+            transform: rotate(0deg);
+        }
+    }
+    @media(max-width:$mobile) {
+        margin-top: 3rem;
+    }
+}
+
+#section-footer {
+    background-color: $color-dark-blue;
+    .footer-container {
+        margin-top: 10rem;
+    }
+    h3 {
+        font-size: $font-size-lg;
+        line-height: 48px;
+    }
+    p {
+        font-size: $font-size-md-plus;
+    }
+    .btn-action {
+        background-color: $color-footer;
+    }
+    .footer-list li {
+        list-style-type: none;
+        margin: 3rem 0rem;
+    }
+    li a {
+        color: $color-white;
     }
 }

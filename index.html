@@ -17,14 +17,14 @@
 </head>
 
 <body>
-    <div class="mock-up-desktop" style="width: 100vw; position:absolute; top: 0;left: 0; opacity: 0.1; pointer-events: none; justify-content: center;">
+    <!-- <div class="mock-up-desktop" style="width: 100vw; position:absolute; top: 0;left: 0; opacity: 0.1; pointer-events: none; justify-content: center;">
         <img src="./img/Desktop Design.png" alt="" style="width:1440px; margin:auto">
-    </div>
+    </div> -->
 
     <!-- MOBILE PREVIEW -->
-    <div class="mock-up-mobile" style="width: 100vw; position:absolute; top: 0;left: 0; opacity: 0.1; pointer-events: none;">
+    <!-- <div class="mock-up-mobile" style="width: 100vw; position:absolute; top: 0;left: 0; opacity: 0.1; pointer-events: none;">
         <img src="./img/Mobile Design.png" alt="" style="width:100%">
-    </div>
+    </div> -->
 
     <!-- DELETE ABOVE AFTER DONE -->
 
@@ -41,13 +41,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav nav ml-auto">
                     <li class="nav-item ">
-                        <a class="nav-link text-center" href="#">Track Application</a>
+                        <a class="nav-link text-center" href="#section-eligibility-form">Track Application</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-center" href="#">Manage My Card</a>
+                        <a class="nav-link text-center" href="#section-select-style">Manage My Card</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-center" href="#">FAQs</a>
+                        <a class="nav-link text-center" href="#section-faq">FAQs</a>
                     </li>
 
                     <li class="nav-item text-center ">
@@ -87,7 +87,7 @@
                         <p class="text-white mt-3">Build your own Credit Card that fits in your day to day lifestyle. First, choose your rewards and then select your card design.</p>
                         <p class="text-white small mt-4">Check if the card is available in your city</p>
                         <div class="d-flex d-sm-none">
-                            <select class="form-control rounded-pill">
+                            <select class="form-control rounded-pill mr-2">
                                     <option value="Delhi" selected>Delhi</option>
                                     <option value="Mumbai">Mumbai</option>
                              </select>
@@ -205,7 +205,7 @@
                             </h4>
                             <div class="d-flex justify-content-between align-items-center mt-4">
                                 <h5 class="text-white m-0">ANSHUL SHARMA</h5>
-                                <img src="./img/mc.png" alt="mastercard" width="50" class="img-fluid">
+                                <img src="./img/mc.png" alt="mastercard" width="50" class="master-logo">
                             </div>
                         </div>
                     </div>
@@ -218,15 +218,179 @@
                         <img data-goto="3" src="./img/bg4.png" alt="bg4">
                     </div>
                 </div>
+
+                <div class="col-md-1 d-none d-md-block"></div>
+
+                <div class="col-md-5 col-sm-12 card-right-sec ">
+                    <img src="./img/paint-roller.png" alt="roller" class="img-fluid d-none d-md-block">
+                    <h2 class="select-style">Select Your Style</h2>
+                    <p class="sml-desc d-none d-md-block mt-4">Match your card to your personality. Whether you like a minimal look or something that catches everyone’s eyes, we’ve got a style for you. You can update your style every year, for a small fee .</p>
+                    <p class="d-block d-md-none mob-dese">Whether you like a minimal look or something that catches everyone’s eyes. We have a Card design for you.</p>
+                    <a class="text-dark  d-block d-md-none w-100 ">Get Started <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                </div>
+                <div class="sync-card mt-5 d-block d-md-none">
+                    <h1 class="text-white text-left">Why the OneSync Card is the Best Choice for you?</h1>
+                    <p class="text-white">You can create a Credit Card that fits all your needs on your own. Gone are the days when you had choose from premade credit cards with features that you did not need. </p>
+                    <p class="text-white">With the OneSync card you can save on all the things that you love to do with a unique personal touch</p>
+                    <a class="text-white  d-block d-md-none w-100 ">Get Started <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                </div>
             </div>
-            <div class="col-md-6 col-sm-12"></div>
-        </div>
         </div>
     </section>
 
+    <section id="section-faq">
+        <div class="container">
+            <h2>FAQs</h2>
+            <div class="accordion" id="accordion-faq">
+                <div class="card">
+                    <div class="card-header bg-white" id="heading-first">
+                        <div class="d-flex align-items-center px-0" data-toggle="collapse" data-parent="#accordion-faq" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <h4 class=" d-flex align-items-center">
+                                Who’s eligible for the Card?
+                            </h4>
+                            <i class="ml-auto fa fa-2x fa-angle-down fa-icon"></i>
+                        </div>
+                    </div>
+
+                    <div id="collapseOne" class="collapse show" aria-labelledby="heading-first" data-parent="#accordionExample">
+                        <div class="card-body">
+                            If you’re between 23-60 years of age, have a monthly income of ₹25,000 or more, and have never defaulted on a credit card or loan payment, we’d encourage you to apply. However, your application will be declined if your location isn’t serviceable or if
+                            your credit score is low.
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card ">
+                    <div class="card-header bg-white" id="heading-second">
+                        <div class="d-flex align-items-center px-0 collapsed" data-toggle="collapse" data-parent="#accordion-faq" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                            <h4 class="mb-0 d-flex align-items-center">
+                                Is my location serviceable?
+                            </h4>
+                            <i class="ml-auto fa fa-2x fa-angle-down"></i>
+                        </div>
+                    </div>
+
+                    <div id="collapseTwo" class="collapse" aria-labelledby="heading-second" data-parent="#accordionExample">
+                        <div class="card-body">
+                            If you’re between 23-60 years of age, have a monthly income of ₹25,000 or more, and have never defaulted on a credit card or loan payment, we’d encourage you to apply. However, your application will be declined if your location isn’t serviceable or if
+                            your credit score is low.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header bg-white" id="heading-third">
+                        <div class="d-flex align-items-center px-0 collapsed" data-toggle="collapse" data-parent="#accordion-faq" href="#collapseThree" aria-expanded="true" aria-controls="collapseTwo">
+                            <h4 class="mb-0 d-flex align-items-center">
+                                What if I don’t want to pay at all?
+                            </h4>
+                            <i class="ml-auto fa fa-2x fa-angle-down"></i>
+                        </div>
+                    </div>
+
+                    <div id="collapseThree" class="collapse" aria-labelledby="heading-third" data-parent="#accordionExample">
+                        <div class="card-body">
+                            If you’re between 23-60 years of age, have a monthly income of ₹25,000 or more,
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="card">
+                    <div class="card-header bg-white" id="heading-fourth">
+                        <div class="d-flex align-items-center px-0 collapsed" data-toggle="collapse" data-parent="#accordion-faq" href="#collapseFour" aria-expanded="true" aria-controls="collapseTwo">
+                            <h4 class="mb-0 d-flex align-items-center">
+                                What happens after I’ve build my card?
+                            </h4>
+                            <i class="ml-auto fa fa-2x fa-angle-down"></i>
+                        </div>
+                    </div>
+
+                    <div id="collapseFour" class="collapse" aria-labelledby="heading-fourth" data-parent="#accordionExample">
+                        <div class="card-body">
+                            If you’re between 23-60 years of age, have a monthly income of ₹25,000 or more,
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="" id="section-footer">
+        <div class="container">
+            <div class="footer-container">
+                <div class="d-flex flex-column justify-content-center align-items-center border-bottom p-5">
+                    <h3 class="text-white text-center">OneSync Credit Card </h3>
+                    <p class="text-white text-center">Experience Freedom</p>
+                    <button class="btn btn-action rounded-pill px-5 mt-4">Get Started</button>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-3 col-sm-12">
+                        <ul class="footer-list">
+                            <li>
+                                <a href="#">Manage Your Card</a>
+                            </li>
+                            <li>
+                                <a href="#">Track Your Application</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 d-none d-md-block">
+                        <ul class="footer-list">
+                            <li>
+                                <a href="#">Manage Your Card</a>
+                            </li>
+                            <li>
+                                <a href="#">Track Your Application</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 d-none d-md-block">
+                        <ul class="footer-list">
+                            <li>
+                                <a href="#">Manage Your Card</a>
+                            </li>
+                            <li>
+                                <a href="#">Track Your Application</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 d-none d-md-block">
+                        <ul class="footer-list">
+                            <li>
+                                <a href="#">Manage Your Card</a>
+                            </li>
+                            <li>
+                                <a href="#">Track Your Application</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -266,6 +430,15 @@
                 $(`img[data-goto="${activeIndex}"]`).addClass('active');
             })
         };
+    </script>
+    <script>
+        $(document).ready(function() {
+            var width = document.body.clientWidth;
+
+            if (width < 500) {
+                $('#collapseOne').removeClass('show');
+            }
+        })
     </script>
 </body>
 

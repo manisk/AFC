@@ -7217,6 +7217,10 @@ body {
   font-weight: 700;
   padding: 6px 23px; }
 
+.sml-desc {
+  font-size: 24px;
+  line-height: 36px; }
+
 .btn-top:hover {
   color: #fff !important;
   background-color: #e91515; }
@@ -7251,7 +7255,7 @@ h2 {
   font-size: 40px; }
   @media (max-width: 450px) {
     h2 {
-      font-size: 24px; } }
+      font-size: 18px; } }
 
 h3 {
   font-size: 24px; }
@@ -7270,6 +7274,9 @@ h3 {
   margin-right: 28px;
   font-weight: 700;
   color: #262A2F; }
+  @media (max-width: 450px) {
+    #section-navbar li.nav-item:not(:last-of-type) {
+      margin-right: 0; } }
 
 @media (max-width: 450px) {
   #section-navbar .navbar {
@@ -7395,10 +7402,16 @@ h3 {
   margin-top: 4.5rem; }
   #section-select-style .card-details-container {
     max-width: 400px;
+    width: 100%;
     aspect-ratio: 1.6; }
     #section-select-style .card-details-container .card-slider img {
+      width: 100%;
       max-width: 400px;
       border-radius: 20px; }
+      @media (max-width: 450px) {
+        #section-select-style .card-details-container .card-slider img {
+          max-width: 268px;
+          margin-left: 2.3rem; } }
     #section-select-style .card-details-container .card-details {
       top: 0;
       font-family: "Nunito Sans", sans-serif;
@@ -7412,8 +7425,20 @@ h3 {
       #section-select-style .card-details-container .card-details h5 {
         font-size: 18px;
         font-weight: 600; }
+        @media (max-width: 450px) {
+          #section-select-style .card-details-container .card-details h5 {
+            font-size: 12px; } }
+      @media (max-width: 450px) {
+        #section-select-style .card-details-container .card-details {
+          padding: 66px;
+          margin-top: -42px;
+          margin-left: -18px; }
+          #section-select-style .card-details-container .card-details img {
+            width: 25px; }
+          #section-select-style .card-details-container .card-details h4 span {
+            font-size: 14px; } }
   #section-select-style .bottom-card-slider {
-    max-width: 400px;
+    width: 65%;
     margin-top: 3rem; }
     #section-select-style .bottom-card-slider img {
       width: 80px;
@@ -7422,3 +7447,96 @@ h3 {
       cursor: pointer; }
       #section-select-style .bottom-card-slider img.active {
         border: 1px solid #000000; }
+    @media (max-width: 450px) {
+      #section-select-style .bottom-card-slider {
+        max-width: 250px;
+        aspect-ratio: 0;
+        margin-top: -28px; }
+        #section-select-style .bottom-card-slider img {
+          width: 50px;
+          border-radius: 5px; } }
+  @media (max-width: 450px) {
+    #section-select-style .bottom-card-slider {
+      width: 100%; }
+    #section-select-style .master-logo {
+      width: 30px; } }
+  #section-select-style .card-right-sec {
+    margin-top: 1rem; }
+    @media (max-width: 450px) {
+      #section-select-style .card-right-sec {
+        margin-top: 4rem; } }
+  #section-select-style .sync-card {
+    background-color: #7C7EB5;
+    height: 441px;
+    width: 500px; }
+    #section-select-style .sync-card h1 {
+      font-size: 24px;
+      margin-top: 2rem;
+      max-width: 324px;
+      margin-left: 30px; }
+    #section-select-style .sync-card p {
+      font-size: 18px;
+      text-align: left;
+      margin-left: 1.3rem;
+      line-height: 27px; }
+    #section-select-style .sync-card a {
+      margin-left: 1.3rem; }
+
+#section-faq {
+  margin-top: 9rem; }
+  #section-faq h2 {
+    text-align: center;
+    font-size: 32px; }
+    @media (max-width: 450px) {
+      #section-faq h2 {
+        font-size: 24px;
+        text-align: left; } }
+  #section-faq .accordion {
+    width: 68%;
+    margin: 10px auto; }
+    @media (max-width: 450px) {
+      #section-faq .accordion {
+        width: 100% !important;
+        margin: 0 auto; } }
+  #section-faq .card {
+    border: none !important; }
+  #section-faq h4,
+  #section-faq i {
+    font-size: 20px; }
+    @media (max-width: 450px) {
+      #section-faq h4,
+      #section-faq i {
+        font-size: 14px; } }
+  #section-faq .card-body {
+    border-bottom: 1px solid #ccc; }
+    @media (max-width: 450px) {
+      #section-faq .card-body {
+        font-size: 12px; } }
+  #section-faq .card-header {
+    color: #F2707C;
+    cursor: pointer; }
+    #section-faq .card-header i {
+      transform: rotate(180deg);
+      transition: transform 0.3s; }
+    #section-faq .card-header .collapsed i {
+      transform: rotate(0deg); }
+  @media (max-width: 450px) {
+    #section-faq {
+      margin-top: 3rem; } }
+
+#section-footer {
+  background-color: #12193B; }
+  #section-footer .footer-container {
+    margin-top: 10rem; }
+  #section-footer h3 {
+    font-size: 32px;
+    line-height: 48px; }
+  #section-footer p {
+    font-size: 20px; }
+  #section-footer .btn-action {
+    background-color: #7C7EB5; }
+  #section-footer .footer-list li {
+    list-style-type: none;
+    margin: 3rem 0rem; }
+  #section-footer li a {
+    color: #fff; }
