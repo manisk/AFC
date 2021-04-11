@@ -7362,6 +7362,14 @@ h3 {
     font-size: 24px;
     max-width: 496px;
     line-height: 36px; }
+  #reward-section #slider {
+    margin-top: 4.5rem; }
+  #reward-section .slick-slide {
+    transition: all 0.3s;
+    transform: scale(0.85);
+    margin-left: 15px; }
+    #reward-section .slick-slide.slick-current {
+      transform: scale(1); }
 
 #section-reward-mobile h3 {
   font-size: 18px;
@@ -7371,3 +7379,6 @@ h3 {
   text-align: left;
   max-width: 327px;
   margin-left: 1rem; }
+
+#select-style .main-background {
+  background-image: url("../img/bg1.png"); }
