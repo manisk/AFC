@@ -17,16 +17,7 @@
 </head>
 
 <body>
-    <!-- <div class="mock-up-desktop" style="width: 100vw; position:absolute; top: 0;left: 0; opacity: 0.1; pointer-events: none; justify-content: center;">
-        <img src="./img/Desktop Design.png" alt="" style="width:1440px; margin:auto">
-    </div> -->
 
-    <!-- MOBILE PREVIEW -->
-    <!-- <div class="mock-up-mobile" style="width: 100vw; position:absolute; top: 0;left: 0; opacity: 0.1; pointer-events: none;">
-        <img src="./img/Mobile Design.png" alt="" style="width:100%">
-    </div> -->
-
-    <!-- DELETE ABOVE AFTER DONE -->
 
     <!--navbar-->
     <div class="container" id="section-navbar">
@@ -415,20 +406,7 @@
                 adaptiveHeight: true
             });
 
-            const thumbs = $('.bottom-card-slider img').toArray();
-            thumbs.forEach(thumb => {
-                thumb.addEventListener('click', () => {
-                    $('.card-slider').slick('slickGoTo', thumb.dataset.goto, false)
-                })
-            })
 
-            $('.card-slider').on("afterChange", (e) => {
-                const activeIndex = $('.card-slider').slick('slickCurrentSlide');
-                $('.bottom-card-slider').find('img').toArray().forEach(img => {
-                    img.classList.remove('active')
-                });
-                $(`img[data-goto="${activeIndex}"]`).addClass('active');
-            })
         };
     </script>
     <script>

@@ -1,20 +1,5 @@
 @import 'node_modules/bootstrap/scss/bootstrap.scss';
 @import 'config.scss';
-// to remove after done
-.mock-up-mobile {
-    display: none;
-    @media(max-width: 400px) {
-        display: flex;
-    }
-}
-
-.mock-up-desktop {
-    display: flex;
-    @media(max-width: 400px) {
-        display: none;
-    }
-}
-
 * {
     margin: 0;
     padding: 0;
