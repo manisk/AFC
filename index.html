@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="./css/app.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
@@ -177,12 +179,43 @@
 
 
     <!--select style section-->
-    <section id="select-style">
+    <section id="section-select-style">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-sm-12">
-                    <div class="main-background">
+                    <div class="card-details-container  m-auto position-relative">
+                        <div class="card-slider">
+                            <div data-index="0" class="card-slide">
+                                <img src="./img/bg1.png" class="img-fluid" alt="card-dark">
+                            </div>
+                            <div data-index="1" class="card-slide">
+                                <img src="./img/bg2.png" class="img-fluid" alt="card-blue">
+                            </div>
+                            <div data-index="2" class="card-slide">
+                                <img src="./img/bg3.png" class="img-fluid" alt="card-red">
+                            </div>
+                            <div data-index="3" class="card-slide">
+                                <img src="./img/bg4.png" class="img-fluid" alt="card-light-blue">
+                            </div>
+                        </div>
+                        <div class="card-details position-absolute w-100">
+                            <img src="./img/atm-ckt.png" class="img-fluid">
+                            <h4 class="text-white mt-4">
+                                <span>5675</span><span>6667</span><span>0212</span><span>5554</span>
+                            </h4>
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <h5 class="text-white m-0">ANSHUL SHARMA</h5>
+                                <img src="./img/mc.png" alt="mastercard" width="50" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
 
+
+                    <div class="bottom-card-slider d-flex align-items-center justify-content-between mx-auto">
+                        <img data-goto="0" src="./img/bg1.png" alt="bg1" class="active">
+                        <img data-goto="1" src="./img/bg2.png" alt="bg2">
+                        <img data-goto="2" src="./img/bg3.png" alt="bg3">
+                        <img data-goto="3" src="./img/bg4.png" alt="bg4">
                     </div>
                 </div>
             </div>
@@ -209,6 +242,29 @@
                 slidesToScroll: 2,
                 centerPadding: '100px'
             });
+
+            $('.card-slider').slick({
+                autoplay: true,
+                infinite: true,
+                speed: 700,
+                slidesToShow: 1,
+                adaptiveHeight: true
+            });
+
+            const thumbs = $('.bottom-card-slider img').toArray();
+            thumbs.forEach(thumb => {
+                thumb.addEventListener('click', () => {
+                    $('.card-slider').slick('slickGoTo', thumb.dataset.goto, false)
+                })
+            })
+
+            $('.card-slider').on("afterChange", (e) => {
+                const activeIndex = $('.card-slider').slick('slickCurrentSlide');
+                $('.bottom-card-slider').find('img').toArray().forEach(img => {
+                    img.classList.remove('active')
+                });
+                $(`img[data-goto="${activeIndex}"]`).addClass('active');
+            })
         };
     </script>
 </body>

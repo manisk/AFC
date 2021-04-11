@@ -7390,3 +7390,35 @@ h3 {
   text-align: left;
   max-width: 327px;
   margin-left: 1rem; }
+
+#section-select-style {
+  margin-top: 4.5rem; }
+  #section-select-style .card-details-container {
+    max-width: 400px;
+    aspect-ratio: 1.6; }
+    #section-select-style .card-details-container .card-slider img {
+      max-width: 400px;
+      border-radius: 20px; }
+    #section-select-style .card-details-container .card-details {
+      top: 0;
+      font-family: "Nunito Sans", sans-serif;
+      padding: 25px;
+      margin-top: 40px; }
+      #section-select-style .card-details-container .card-details h4 {
+        font-weight: 700; }
+        #section-select-style .card-details-container .card-details h4 span {
+          margin-right: 1rem;
+          font-size: 1.5rem; }
+      #section-select-style .card-details-container .card-details h5 {
+        font-size: 18px;
+        font-weight: 600; }
+  #section-select-style .bottom-card-slider {
+    max-width: 400px;
+    margin-top: 3rem; }
+    #section-select-style .bottom-card-slider img {
+      width: 80px;
+      border-radius: 10px;
+      padding: 3px;
+      cursor: pointer; }
+      #section-select-style .bottom-card-slider img.active {
+        border: 1px solid #000000; }
