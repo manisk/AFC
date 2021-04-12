@@ -1,5 +1,5 @@
 @import 'node_modules/bootstrap/scss/bootstrap.scss';
-@import 'config.scss';
+@import '_vars.scss';
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +9,7 @@ body {
     box-sizing: border-box;
     font-family: $font-roboto;
     font-size: $font-size-md;
-    line-height: 24px;
+    line-height: $standard-line-height;
 }
 
 .container {
@@ -136,6 +136,7 @@ h3 {
 }
 
 #section-create-credit-card {
+    font-family: $font-helventica;
     background-color: $color-dark;
     margin-top: 4.5rem;
     padding: 6rem;
@@ -258,7 +259,10 @@ h3 {
 
 $card-width: 400px;
 #section-select-style {
-    margin-top: 4.5rem;
+    padding: 4.5rem 0;
+    background-color: $color-light-blue;
+    max-width: 100vw;
+    overflow-x: hidden;
     .card-details-container {
         max-width: $card-width;
         width: 100%;
@@ -326,14 +330,6 @@ $card-width: 400px;
             }
         }
     }
-    @media(max-width: $mobile) {
-        .bottom-card-slider {
-            width: 100%;
-        }
-        .master-logo {
-            width: 30px;
-        }
-    }
     .card-right-sec {
         margin-top: 1rem;
         @media(max-width: $mobile) {
@@ -360,6 +356,22 @@ $card-width: 400px;
             margin-left: 1.3rem;
         }
     }
+    @media(max-width: $mobile) {
+        background-color: transparent;
+        .bottom-card-slider {
+            width: 100%;
+        }
+        .master-logo {
+            width: 30px;
+        }
+        .column-container {
+            background-color: $color-light-blue;
+            padding: 2rem 0;
+        }
+        .card-details-container {
+            transform: translateX(1rem)
+        }
+    }
 }
 
 #section-faq {
@@ -370,6 +382,7 @@ $card-width: 400px;
         @media(max-width: $mobile) {
             font-size: $font-size-subtitle;
             text-align: left;
+            padding-left: 1.2rem;
         }
     }
     .accordion {
@@ -408,18 +421,29 @@ $card-width: 400px;
         }
     }
     @media(max-width:$mobile) {
-        margin-top: 3rem;
+        margin-top: 0;
     }
 }
 
 #section-footer {
+    font-family: $font-helventica;
     background-color: $color-dark-blue;
     .footer-container {
         margin-top: 10rem;
+        @media(max-width: $mobile) {
+            padding-top: 20px;
+            margin-top: 5rem;
+        }
+    }
+    .border-bottom {
+        padding: 4rem;
+        @media(max-width: $mobile) {
+            padding: 11px;
+        }
     }
     h3 {
         font-size: $font-size-lg;
-        line-height: 48px;
+        line-height: $line-height-lg;
     }
     p {
         font-size: $font-size-md-plus;
@@ -427,11 +451,25 @@ $card-width: 400px;
     .btn-action {
         background-color: $color-footer;
     }
+    ul {
+        padding: 52px 11px;
+        @media(max-width: $mobile) {
+            padding: 0;
+        }
+    }
     .footer-list li {
         list-style-type: none;
-        margin: 3rem 0rem;
+        margin: 15px -2px;
     }
     li a {
         color: $color-white;
+    }
+    @media(max-width:$mobile) {
+        .btn-action {
+            margin-bottom: 4rem;
+        }
+        .footer-list li {
+            margin: 30px 10px;
+        }
     }
 }

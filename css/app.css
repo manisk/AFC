@@ -7297,6 +7297,7 @@ h3 {
         margin-top: 2rem; } }
 
 #section-create-credit-card {
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   background-color: #8E7CB5;
   margin-top: 4.5rem;
   padding: 6rem; }
@@ -7387,7 +7388,10 @@ h3 {
   margin-left: 1rem; }
 
 #section-select-style {
-  margin-top: 4.5rem; }
+  padding: 4.5rem 0;
+  background-color: #F7F3FF;
+  max-width: 100vw;
+  overflow-x: hidden; }
   #section-select-style .card-details-container {
     max-width: 400px;
     width: 100%;
@@ -7443,11 +7447,6 @@ h3 {
         #section-select-style .bottom-card-slider img {
           width: 50px;
           border-radius: 5px; } }
-  @media (max-width: 450px) {
-    #section-select-style .bottom-card-slider {
-      width: 100%; }
-    #section-select-style .master-logo {
-      width: 30px; } }
   #section-select-style .card-right-sec {
     margin-top: 1rem; }
     @media (max-width: 450px) {
@@ -7469,6 +7468,18 @@ h3 {
       line-height: 27px; }
     #section-select-style .sync-card a {
       margin-left: 1.3rem; }
+  @media (max-width: 450px) {
+    #section-select-style {
+      background-color: transparent; }
+      #section-select-style .bottom-card-slider {
+        width: 100%; }
+      #section-select-style .master-logo {
+        width: 30px; }
+      #section-select-style .column-container {
+        background-color: #F7F3FF;
+        padding: 2rem 0; }
+      #section-select-style .card-details-container {
+        transform: translateX(1rem); } }
 
 #section-faq {
   margin-top: 9rem; }
@@ -7478,7 +7489,8 @@ h3 {
     @media (max-width: 450px) {
       #section-faq h2 {
         font-size: 24px;
-        text-align: left; } }
+        text-align: left;
+        padding-left: 1.2rem; } }
   #section-faq .accordion {
     width: 68%;
     margin: 10px auto; }
@@ -7510,12 +7522,22 @@ h3 {
       transform: rotate(0deg); }
   @media (max-width: 450px) {
     #section-faq {
-      margin-top: 3rem; } }
+      margin-top: 0; } }
 
 #section-footer {
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   background-color: #12193B; }
   #section-footer .footer-container {
     margin-top: 10rem; }
+    @media (max-width: 450px) {
+      #section-footer .footer-container {
+        padding-top: 20px;
+        margin-top: 5rem; } }
+  #section-footer .border-bottom {
+    padding: 4rem; }
+    @media (max-width: 450px) {
+      #section-footer .border-bottom {
+        padding: 11px; } }
   #section-footer h3 {
     font-size: 32px;
     line-height: 48px; }
@@ -7523,8 +7545,18 @@ h3 {
     font-size: 20px; }
   #section-footer .btn-action {
     background-color: #7C7EB5; }
+  #section-footer ul {
+    padding: 52px 11px; }
+    @media (max-width: 450px) {
+      #section-footer ul {
+        padding: 0; } }
   #section-footer .footer-list li {
     list-style-type: none;
-    margin: 3rem 0rem; }
+    margin: 15px -2px; }
   #section-footer li a {
     color: #fff; }
+  @media (max-width: 450px) {
+    #section-footer .btn-action {
+      margin-bottom: 4rem; }
+    #section-footer .footer-list li {
+      margin: 30px 10px; } }
